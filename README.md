@@ -110,3 +110,5 @@ builds the Go toolchain.
 In addition, the script sets the $GOROOT to point to the 1.6 toolchain, as well as adds the binary to $PATH.
 
 Tested on L4T 24.1 64 bit
+
+
