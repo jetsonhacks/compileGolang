@@ -28,6 +28,7 @@ system with a working 1.4 compiler.
 In the src directory of the Go toolchain, there is a script called bootstrap.bash which builds a bootstrap for different architectures.
 
 When run as (for example)
+<blockquote>
  #
  #	GOOS=linux GOARCH=arm bootstrap.bash
  #
@@ -35,12 +36,17 @@ When run as (for example)
  # combination, leaving the resulting tree in ../../go-${GOOS}-${GOARCH}-bootstrap.
  # That tree can be copied to a machine of the given target type
  # and used as $GOROOT_BOOTSTRAP to bootstrap a local build.
+ </blockquote>
  
 On the 32 bit TX1 in particular, the Go toolchain is built as 'arm', and the host architecture is set as 'arm'.
 This makes the program available to run in 32 bit space.
  
-The file go-linux-arm-bootstrap.tbz is the bootstrap used, generated on an Ubuntu x86 PC.
-The compileGolangArm32 script first untars the bootstrap and sets it as the $GOROOT_BOOTSTRAP
+The file go-linux-arm-bootstrap.tbz is the bootstrap used, generated on an Ubuntu x86 PC. Executing the shell file:
+
+$ ./compileGolangArm32.sh
+
+
+first untars the bootstrap and sets it as the $GOROOT_BOOTSTRAP
 The script sets up some compiler environment variables:
 
 export GOARCH=arm
