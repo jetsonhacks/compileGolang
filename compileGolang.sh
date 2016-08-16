@@ -17,11 +17,11 @@ cd src
 ./all.bash
 # Setup environment variables
 echo "export GOROOT=$HOME/go" >> ~/.bashrc
-echo "export PATH=$PATH:$GOROOT/bin" >> ~/.bashrc
+echo "export PATH=$PATH:$HOME/go/bin" >> ~/.bashrc
 # Issues with source bashrc
 source ~/.bashrc
 GOROOT=$HOME/go
-PATH=$PATH:$GOROOT/bin
+PATH=$PATH:$HOME/go/bin
 
 
 
