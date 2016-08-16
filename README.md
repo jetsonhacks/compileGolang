@@ -27,14 +27,20 @@ system with a working 1.4 compiler.
 
 In the src directory of the Go toolchain, there is a script called bootstrap.bash which builds a bootstrap for different architectures.
 
-When run as (for example)
+
 <code>
  #
+ 
  #	GOOS=linux GOARCH=arm bootstrap.bash
+ 
  #
+ 
  # this script cross-compiles a toolchain for that GOOS/GOARCH
+ 
  # combination, leaving the resulting tree in ../../go-${GOOS}-${GOARCH}-bootstrap.
+ 
  # That tree can be copied to a machine of the given target type
+ 
  # and used as $GOROOT_BOOTSTRAP to bootstrap a local build.
  </code>
  
@@ -50,8 +56,9 @@ first untars the bootstrap and sets it as the $GOROOT_BOOTSTRAP
 The script sets up some compiler environment variables:
 
 export GOARCH=arm
+
 export GOARM=7
-# Make Go for 32 bit
+
 export GOHOSTARCH=arm
 
 Next the script will download Go (switches to version 1.6, the latest stable version as of this writing) and then
