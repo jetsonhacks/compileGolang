@@ -34,13 +34,11 @@ In the src directory of the Go toolchain, there is a script called bootstrap.bas
  #	GOOS=linux GOARCH=arm bootstrap.bash
  
  #
- 
  # this script cross-compiles a toolchain for that GOOS/GOARCH
  
  # combination, leaving the resulting tree in ../../go-${GOOS}-${GOARCH}-bootstrap.
  
  # That tree can be copied to a machine of the given target type
- 
  # and used as $GOROOT_BOOTSTRAP to bootstrap a local build.
  </code>
  
