@@ -29,7 +29,7 @@ different Go system with a working 1.4 compiler.
 In the src directory of the Go toolchain, there is a script called bootstrap.bash which builds a bootstrap for different architectures.
 
 
-<blockquote>
+<code>
  #
  
  #	GOOS=linux GOARCH=arm bootstrap.bash
@@ -43,7 +43,7 @@ In the src directory of the Go toolchain, there is a script called bootstrap.bas
  # That tree can be copied to a machine of the given target type
  
  # and used as $GOROOT_BOOTSTRAP to bootstrap a local build.
- </blockquote>
+ </code>
  
 On the 32 bit TX1 in particular, the Go toolchain is built as 'arm', and the host architecture is set as 'arm'.
 This makes the program available to run in 32 bit space.
@@ -80,7 +80,7 @@ different Go system with a working 1.4 compiler.
 In the src directory of the Go toolchain, there is a script called bootstrap.bash which builds a bootstrap for different architectures.
 
 
-<blockquote>
+<code>
  #
  
  #	GOOS=linux GOARCH=arm64 bootstrap.bash
@@ -94,7 +94,7 @@ In the src directory of the Go toolchain, there is a script called bootstrap.bas
  # That tree can be copied to a machine of the given target type
  
  # and used as $GOROOT_BOOTSTRAP to bootstrap a local build.
- </blockquote>
+ </code>
  
 On the 64 bit TX1, the Go toolchain is built as 'arm64'. The default host architecture used is 'arm64'.
 
