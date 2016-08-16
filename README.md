@@ -6,9 +6,10 @@ Compile Go (Golang) for NVIDIA Jetson TK1
 For versions later that Go 1.5, a version of Go 1.4 is needed to bootstrap the Go toolchain.
 
 <b>Jetson TK1</b>
+
 On the Jetson TK1, Go 1.4 can be built natively. Executing the shell file:
 
-./compileGolang.sh
+$ ./compileGolang.sh
 
 Will download and build Go 1.4 in the $HOME/go1.4 directory. Next the script will download
 Go (switches to version 1.6, the latest stable version as of this writing) and then builds to Go toolchain.
@@ -16,6 +17,7 @@ In addition, the script sets the $GOROOT to point to the 1.6 toolchain, as well 
 
 
 <b>Jetson TX1 32 bit</b>
+
 The Jetson TX1 uses an ARM 64 bit processor which is not supported natively by the Go 1.4 compiler. Another issue
 is that while the Linux kernel is 64 bit on the TX1, the user space is 32 bit. 
 
