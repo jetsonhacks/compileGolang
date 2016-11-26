@@ -5,7 +5,7 @@ Compile Go (Golang) for NVIDIA Jetson TK1
 
 <b>Building Go Toolchain</b>
 
-For versions later that Go 1.5, a version of Go 1.4 is needed to bootstrap the Go toolchain.
+For versions later than Go 1.5, a version of Go 1.4 is needed to bootstrap the Go toolchain.
 
 <b>Jetson TK1</b>
 
